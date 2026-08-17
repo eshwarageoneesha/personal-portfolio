@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfolio of Oneesha Eshwarage">
+  <meta name="theme-color" content="#fffaf7">
   <title>Oneesha Eshwarage | Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,16 +12,27 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="page-glow glow-a"></div>
+  <div class="page-glow glow-b"></div>
+
   <header class="nav-wrap">
     <nav class="nav container">
-      <a class="brand" href="#home">OE<span>.</span></a>
-      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+      <a class="brand" href="#home" aria-label="Go to home">
+        <span class="brand-mark">O</span>
+        <span class="brand-text">
+          <strong>Oneesha Eshwarage</strong>
+          <small>Software Developer • UI/UX</small>
+        </span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">☰</button>
+
       <div class="nav-links" id="navLinks">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#journey">Journey</a>
-        <a href="#contact">Contact</a>
+        <a class="nav-contact" href="#contact">Let's Talk</a>
       </div>
     </nav>
   </header>
@@ -29,32 +41,62 @@
     <section class="hero section" id="home">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <div class="eyebrow">✦ Available for internships & opportunities</div>
-          <h1>Building thoughtful <span>digital experiences.</span></h1>
+          <div class="eyebrow"><span class="pulse"></span> Open to internships & opportunities</div>
+
+          <p class="hero-mini">Hello, I’m Oneesha 👋</p>
+          <h1>I design & build <span class="gradient-text">thoughtful digital experiences.</span></h1>
+
           <p class="hero-role">Computer Science Undergraduate • Aspiring Software Developer</p>
-          <p class="hero-text">I enjoy creating practical, user-focused digital products through thoughtful design, clean interfaces, and reliable software engineering.</p>
+          <p class="hero-text">
+            I enjoy combining software engineering, clean UI design, and problem solving to build products that feel simple, useful, and human.
+          </p>
+
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects">Explore my work ↗</a>
-            <a class="btn btn-secondary" href="mailto:eshwarageoneesha@gmail.com">✉ Let’s connect</a>
+            <a class="btn btn-primary" href="#projects">View my projects <span>↗</span></a>
+            <a class="btn btn-light" href="mailto:eshwarageoneesha@gmail.com?subject=Portfolio%20Contact">Email me</a>
           </div>
-          <div class="social-row">
-            <a href="https://github.com/" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+
+          <div class="hero-links">
+            <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <button id="copyEmailBtn" type="button">Copy email</button>
           </div>
+          <p class="copy-status" id="copyStatus" aria-live="polite"></p>
         </div>
 
-        <div class="hero-art">
-          <div class="orb orb-one"></div>
-          <div class="orb orb-two"></div>
-          <div class="profile-card">
-            <div class="profile-avatar">OE</div>
-            <p>HELLO, I’M</p>
-            <h2>Oneesha Eshwarage</h2>
-            <span>Software • Design • Problem Solving</span>
+        <div class="hero-art" aria-label="Creative portfolio visual">
+          <div class="art-frame">
+            <div class="art-top">
+              <span></span><span></span><span></span>
+            </div>
+
+            <div class="art-canvas">
+              <div class="art-card profile-preview">
+                <div class="avatar">OE</div>
+                <div>
+                  <small>PORTFOLIO</small>
+                  <h2>Oneesha<br>Eshwarage</h2>
+                </div>
+              </div>
+
+              <div class="art-card color-card peach"></div>
+              <div class="art-card color-card purple"></div>
+              <div class="art-card color-card mint"></div>
+
+              <div class="art-line line-1"></div>
+              <div class="art-line line-2"></div>
+              <div class="art-dot dot-1"></div>
+              <div class="art-dot dot-2"></div>
+
+              <div class="art-note">
+                <span>CREATIVE</span>
+                <strong>Code + Design</strong>
+              </div>
+            </div>
           </div>
-          <div class="floating-chip chip-one">React.js</div>
-          <div class="floating-chip chip-two">UI / UX</div>
-          <div class="floating-chip chip-three">Full Stack</div>
+
+          <div class="hero-sticker sticker-1">✦</div>
+          <div class="hero-sticker sticker-2">✧</div>
         </div>
       </div>
     </section>
@@ -75,12 +117,21 @@
 
           <div class="mini-panels">
             <article class="mini-panel">
-              <div class="icon">🎓</div>
-              <div><span>Studying</span><strong>BSc (Hons) in Computer Science</strong><p>University of Colombo School of Computing</p></div>
+              <div class="mini-icon lilac">🎓</div>
+              <div>
+                <span>Studying</span>
+                <strong>BSc (Hons) in Computer Science</strong>
+                <p>University of Colombo School of Computing</p>
+              </div>
             </article>
+
             <article class="mini-panel">
-              <div class="icon">⌖</div>
-              <div><span>Based in</span><strong>Sri Lanka</strong><p>Open to learning, collaboration & opportunities</p></div>
+              <div class="mini-icon coral">⌖</div>
+              <div>
+                <span>Based in</span>
+                <strong>Sri Lanka</strong>
+                <p>Open to learning, collaboration & opportunities</p>
+              </div>
             </article>
           </div>
         </div>
@@ -96,12 +147,41 @@
         </div>
 
         <div class="skills-grid">
-          <article class="skill-card"><h3>Languages</h3><div class="tag-wrap"><span>Java</span><span>Python</span><span>C</span><span>C++</span><span>JavaScript</span><span>HTML</span><span>CSS</span></div></article>
-          <article class="skill-card"><h3>Frontend & UI/UX</h3><div class="tag-wrap"><span>React.js</span><span>Next.js</span><span>Tailwind CSS</span><span>Figma</span><span>HCI Principles</span></div></article>
-          <article class="skill-card"><h3>Backend</h3><div class="tag-wrap"><span>Node.js</span><span>NestJS</span><span>Spring Boot</span><span>PHP</span><span>REST APIs</span></div></article>
-          <article class="skill-card"><h3>Data & Systems</h3><div class="tag-wrap"><span>MySQL</span><span>Firebase</span><span>RabbitMQ</span><span>WebSockets</span><span>Distributed Systems</span></div></article>
-          <article class="skill-card"><h3>QA & Tools</h3><div class="tag-wrap"><span>Postman</span><span>Selenium</span><span>Git</span><span>GitHub</span><span>JIRA</span><span>Docker</span></div></article>
-          <article class="skill-card"><h3>Ways of Working</h3><div class="tag-wrap"><span>Agile/Scrum</span><span>SDLC</span><span>Requirement Gathering</span><span>User Testing</span><span>Team Collaboration</span></div></article>
+          <article class="skill-card accent-peach">
+            <div class="skill-number">01</div>
+            <h3>Languages</h3>
+            <div class="tag-wrap"><span>Java</span><span>Python</span><span>C</span><span>C++</span><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+          </article>
+
+          <article class="skill-card accent-purple">
+            <div class="skill-number">02</div>
+            <h3>Frontend & UI/UX</h3>
+            <div class="tag-wrap"><span>React.js</span><span>Next.js</span><span>Tailwind CSS</span><span>Figma</span><span>HCI Principles</span></div>
+          </article>
+
+          <article class="skill-card accent-mint">
+            <div class="skill-number">03</div>
+            <h3>Backend</h3>
+            <div class="tag-wrap"><span>Node.js</span><span>NestJS</span><span>Spring Boot</span><span>PHP</span><span>REST APIs</span></div>
+          </article>
+
+          <article class="skill-card accent-blue">
+            <div class="skill-number">04</div>
+            <h3>Data & Systems</h3>
+            <div class="tag-wrap"><span>MySQL</span><span>Firebase</span><span>RabbitMQ</span><span>WebSockets</span><span>Distributed Systems</span></div>
+          </article>
+
+          <article class="skill-card accent-yellow">
+            <div class="skill-number">05</div>
+            <h3>QA & Tools</h3>
+            <div class="tag-wrap"><span>Postman</span><span>Selenium</span><span>Git</span><span>GitHub</span><span>JIRA</span><span>Docker</span></div>
+          </article>
+
+          <article class="skill-card accent-rose">
+            <div class="skill-number">06</div>
+            <h3>Ways of Working</h3>
+            <div class="tag-wrap"><span>Agile/Scrum</span><span>SDLC</span><span>Requirement Gathering</span><span>User Testing</span><span>Team Collaboration</span></div>
+          </article>
         </div>
       </div>
     </section>
@@ -116,9 +196,15 @@
 
         <div class="projects-grid">
           <article class="project-card">
-            <div class="project-visual v1"><b>01</b><span>Creative Content Platform</span></div>
+            <div class="project-visual v1">
+              <div class="project-shape shape-a"></div>
+              <div class="project-shape shape-b"></div>
+              <b>01</b>
+              <span>Creative Content Platform</span>
+            </div>
             <div class="project-body">
-              <small>Jun – Aug 2026</small><h3>SoulShelf</h3>
+              <small>Jun – Aug 2026</small>
+              <h3>SoulShelf</h3>
               <p>A full-stack creative platform where users can publish and explore books, articles, paintings, poetry, and other original content.</p>
               <ul><li>JWT authentication and protected user flows</li><li>Image uploads, search, filtering and creator profiles</li><li>Responsive featured-creator experience</li></ul>
               <div class="tag-wrap"><span>React.js</span><span>Node.js</span><span>Express.js</span><span>JWT</span></div>
@@ -126,9 +212,15 @@
           </article>
 
           <article class="project-card">
-            <div class="project-visual v2"><b>02</b><span>Mobile • IoT • Cloud</span></div>
+            <div class="project-visual v2">
+              <div class="project-shape shape-a"></div>
+              <div class="project-shape shape-c"></div>
+              <b>02</b>
+              <span>Mobile • IoT • Cloud</span>
+            </div>
             <div class="project-body">
-              <small>Jul – Aug 2026</small><h3>Smart Home Monitoring</h3>
+              <small>Jul – Aug 2026</small>
+              <h3>Smart Home Monitoring</h3>
               <p>A cloud-connected smart-home solution with an Android application and interactive web simulator.</p>
               <ul><li>Firebase real-time synchronization</li><li>Interactive floor/device controls</li><li>Scheduling and automated safety cut-offs</li></ul>
               <div class="tag-wrap"><span>Kotlin</span><span>Android</span><span>Firebase</span><span>JavaScript</span></div>
@@ -136,9 +228,15 @@
           </article>
 
           <article class="project-card">
-            <div class="project-visual v3"><b>03</b><span>Club Management System</span></div>
+            <div class="project-visual v3">
+              <div class="project-shape shape-b"></div>
+              <div class="project-shape shape-c"></div>
+              <b>03</b>
+              <span>Club Management System</span>
+            </div>
             <div class="project-body">
-              <small>Jun 2025 – Apr 2026</small><h3>CricCompiler</h3>
+              <small>Jun 2025 – Apr 2026</small>
+              <h3>CricCompiler</h3>
               <p>A centralized cricket club platform created to modernize management, communication, performance tracking, and fan engagement.</p>
               <ul><li>Player, match and tournament management</li><li>Real-time features with WebSockets</li><li>Payments and email service integrations</li></ul>
               <div class="tag-wrap"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span></div>
@@ -146,9 +244,15 @@
           </article>
 
           <article class="project-card">
-            <div class="project-visual v4"><b>04</b><span>Distributed Middleware</span></div>
+            <div class="project-visual v4">
+              <div class="project-shape shape-a"></div>
+              <div class="project-shape shape-d"></div>
+              <b>04</b>
+              <span>Distributed Middleware</span>
+            </div>
             <div class="project-body">
-              <small>Mar 2026</small><h3>Swift Logistics Middleware</h3>
+              <small>Mar 2026</small>
+              <h3>Swift Logistics Middleware</h3>
               <p>A middleware architecture integrating logistics services across SOAP, REST, and TCP with asynchronous communication.</p>
               <ul><li>Multi-protocol backend integration</li><li>RabbitMQ messaging and MySQL persistence</li><li>Role-based portals and live monitoring</li></ul>
               <div class="tag-wrap"><span>Python</span><span>Flask</span><span>RabbitMQ</span><span>Docker</span></div>
@@ -160,30 +264,58 @@
 
     <section class="section soft-section" id="journey">
       <div class="container">
-        <div class="section-title"><span>04 / JOURNEY</span><h2>Learning beyond the classroom.</h2></div>
+        <div class="section-title">
+          <span>04 / JOURNEY</span>
+          <h2>Learning beyond the classroom.</h2>
+        </div>
+
         <div class="journey-grid">
-          <article class="journey-card featured"><span>EDUCATION</span><h3>University of Colombo School of Computing</h3><p>BSc (Hons) in Computer Science</p><div class="journey-meta"><strong>2024 – Present</strong><strong>GPA 3.53</strong></div></article>
-          <article class="journey-card"><h3>🏆 Achievements</h3><ul><li>Director’s List – 2024</li><li>Chess Fresher’s Interfaculty – 2nd Runners Up, 2025</li><li>Chess Interfaculty Participant – 2025 & 2026</li><li>ANCQ 2019 – High Distinction</li></ul></article>
-          <article class="journey-card"><h3>🤝 Community</h3><ul><li>CompSoc – Executive Committee Member / Editor</li><li>Content Team Lead / Content Writer</li><li>IEEE UCSC – Member</li></ul></article>
+          <article class="journey-card featured">
+            <span>EDUCATION</span>
+            <h3>University of Colombo School of Computing</h3>
+            <p>BSc (Hons) in Computer Science</p>
+            <div class="journey-meta"><strong>2024 – Present</strong><strong>GPA 3.53</strong></div>
+          </article>
+
+          <article class="journey-card">
+            <div class="journey-icon">🏆</div>
+            <h3>Achievements</h3>
+            <ul><li>Director’s List – 2024</li><li>Chess Fresher’s Interfaculty – 2nd Runners Up, 2025</li><li>Chess Interfaculty Participant – 2025 & 2026</li><li>ANCQ 2019 – High Distinction</li></ul>
+          </article>
+
+          <article class="journey-card">
+            <div class="journey-icon">🤝</div>
+            <h3>Community</h3>
+            <ul><li>CompSoc – Executive Committee Member / Editor</li><li>Content Team Lead / Content Writer</li><li>IEEE UCSC – Member</li></ul>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="section" id="contact">
       <div class="container contact-card">
-        <div>
+        <div class="contact-copy">
           <span class="contact-kicker">LET’S BUILD SOMETHING MEANINGFUL</span>
           <h2>Have an idea, opportunity, or project in mind?</h2>
           <p>I’d be happy to connect and hear about it.</p>
+          <a class="email-address" href="mailto:eshwarageoneesha@gmail.com?subject=Portfolio%20Contact">eshwarageoneesha@gmail.com ↗</a>
         </div>
-        <div class="contact-actions">
-          <a class="btn btn-primary" href="mailto:eshwarageoneesha@gmail.com">✉ Email me</a>
+
+        <div class="contact-badge">
+          <span>OPEN TO</span>
+          <strong>Internships<br>& Collaborations</strong>
         </div>
       </div>
     </section>
   </main>
 
-  <footer><div class="container footer-inner"><p>© 2026 Oneesha Eshwarage</p><p>Designed & built with HTML, CSS & JavaScript.</p></div></footer>
+  <footer>
+    <div class="container footer-inner">
+      <p>© 2026 Oneesha Eshwarage</p>
+      <p>Designed & built with HTML, CSS & JavaScript.</p>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>

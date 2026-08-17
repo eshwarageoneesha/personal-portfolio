@@ -1,19 +1,30 @@
-# Oneesha Portfolio - Static Version
+# Oneesha Eshwarage — Portfolio V2
 
-This version requires no React, npm, or build step.
+A colorful, light-themed static portfolio built with HTML, CSS, and JavaScript.
 
-## Run
-
+## Open locally
 Just double-click `index.html`.
 
-## GitHub
+## Email
+The Email buttons use:
+`mailto:eshwarageoneesha@gmail.com?subject=Portfolio%20Contact`
 
-Upload the folder contents directly to a repository.
+This opens the visitor's configured/default email application.
+A "Copy email" button is also included as a fallback.
 
-## GitHub Pages
+## Before publishing
+Replace the placeholder links in `index.html`:
+- `https://github.com/`
+- `https://www.linkedin.com/`
 
-Repository Settings → Pages → Deploy from branch → main / root.
+with your real profile URLs.
 
-## Customize
+## GitHub workflow
+```bash
+git checkout develop
+git add .
+git commit -m "Redesign portfolio UI"
+git push
+```
 
-Replace the placeholder GitHub and LinkedIn URLs inside `index.html`.
+When ready, merge `develop` into `main`.
